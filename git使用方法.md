@@ -124,9 +124,21 @@ git push origin main
 
 ### 如果出现了冲突，本地和仓库的内容不一致出现版本冲突，即命令行出现reject红色报错
 ```
-git pull origin main
+git pull origin main --allow-unrelated-histories
 ```
-### 采用如下代码强制合并
+### 这个时候会进入Git 合并过程中的编辑器
+运用如下命令输入后回车退出
+```
+:wq
+```
+### 再次推送即可
+```
+git push origin main
+```
+
+### 如果push的时候显示Everything up-to-date表示没有差异，文件一直，并没有更更改内容
+
+### 采用如下代码强制合并，谨慎使用，可能会丢失某些文件
 ```
 git push origin main --force
 ```
