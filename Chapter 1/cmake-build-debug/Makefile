@@ -142,6 +142,19 @@ Chapter_1/fast:
 .PHONY : Chapter_1/fast
 
 #=============================================================================
+# Target rules for targets named P1000
+
+# Build rule for target.
+P1000: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 P1000
+.PHONY : P1000
+
+# fast build rule for target.
+P1000/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1000.dir\build.make CMakeFiles/P1000.dir/build
+.PHONY : P1000/fast
+
+#=============================================================================
 # Target rules for targets named B2025
 
 # Build rule for target.
@@ -208,6 +221,33 @@ B2025.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\B2025.dir\build.make CMakeFiles/B2025.dir/B2025.c.s
 .PHONY : B2025.c.s
 
+P1000.obj: P1000.c.obj
+
+.PHONY : P1000.obj
+
+# target to build an object file
+P1000.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1000.dir\build.make CMakeFiles/P1000.dir/P1000.c.obj
+.PHONY : P1000.c.obj
+
+P1000.i: P1000.c.i
+
+.PHONY : P1000.i
+
+# target to preprocess a source file
+P1000.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1000.dir\build.make CMakeFiles/P1000.dir/P1000.c.i
+.PHONY : P1000.c.i
+
+P1000.s: P1000.c.s
+
+.PHONY : P1000.s
+
+# target to generate assembly for a file
+P1000.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1000.dir\build.make CMakeFiles/P1000.dir/P1000.c.s
+.PHONY : P1000.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,12 +258,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... B2025
 	@echo ... Chapter_1
+	@echo ... P1000
 	@echo ... B2002.obj
 	@echo ... B2002.i
 	@echo ... B2002.s
 	@echo ... B2025.obj
 	@echo ... B2025.i
 	@echo ... B2025.s
+	@echo ... P1000.obj
+	@echo ... P1000.i
+	@echo ... P1000.s
 .PHONY : help
 
 
