@@ -93,13 +93,17 @@ git commit -m "first commit"
 git commit -m "本次添加了xxx文件"
 ```
 
-### 4.设置远程仓库
+### 4.设置远程仓库（建议都使用ssh地址，不会受到网络限制，推送速度快）
 ```
 git remote add origin (你的仓库https地址)
 ```
 如果网络无法连接，采用ssh
 ```
-git remote set-url origin (你的仓库ssh地址)
+git remote add origin (你的仓库ssh地址)
+```
+### 如何重新设置远程仓库地址，用set-url（例如：github---->gitee）
+```
+git remote set-url origin (你的仓库地址)
 ```
 
 ### 如何记忆两种地址
