@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a52be50-1e9c-4e02-84c1-ceaf5f4bbb48" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/luogu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/洛谷题单/顺序结构/3-超级玛丽游戏.md" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷题单/顺序结构/3-超级玛丽游戏.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/网站整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/网站整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/草稿.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +36,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "正在合并 main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/develop/develop/development code/IDEA",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -71,6 +69,7 @@
       <workItem from="1740300726327" duration="60000" />
       <workItem from="1741353906777" duration="14000" />
       <workItem from="1741359336001" duration="1000" />
+      <workItem from="1743086393058" duration="22000" />
     </task>
     <servers />
   </component>
