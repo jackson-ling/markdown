@@ -6,10 +6,10 @@
 
 # 目录
 
-- ## part 1: git 的基本配置
-- ## part 2: git 的基本命令
-- ## part 3: 什么是分支 branch，如何使用
-- ## part 4: 内容补充
+- ## part 1: [git 的基本配置](#part-1git-的基本配置)
+- ## part 2: [git 的基本命令](#part-2git-的基本命令)
+- ## part 3: [什么是分支 branch，如何使用](#part-3什么是分支-branch如何使用)
+- ## part 4: [内容补充](#part-4内容补充)
 
 ---
 
