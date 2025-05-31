@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a52be50-1e9c-4e02-84c1-ceaf5f4bbb48" name="默认变更列表" comment="">
-      <change beforePath="$PROJECT_DIR$/网站整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/网站整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/草稿.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java学习笔记/第二阶段/面向对象高级/57.类变量.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java学习笔记/第二阶段/面向对象高级/58.类方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java学习笔记/第二阶段/面向对象高级/59.main方法.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,28 +22,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 6
-}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2tR2mTyEVgWvfL4bzbGWbN0zQS1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/develop/develop/development code/IDEA",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -70,6 +62,7 @@
       <workItem from="1741353906777" duration="14000" />
       <workItem from="1741359336001" duration="1000" />
       <workItem from="1743086393058" duration="22000" />
+      <workItem from="1747891075941" duration="94000" />
     </task>
     <servers />
   </component>
