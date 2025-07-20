@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!--根标签-->
+
+<head>
+    <title>我的第一个网页</title>
+    <!--网页标签页的内容-->
+    <meta charset="UTF-8" />
+    <!--告诉浏览器用什么字符集解析文本，和文本的字符集有关-->
+</head>
+
+<!--头标签：定义重要但是不显示在页面的内容，例如：字符集；css引入；js引入等等-->
+
+<!--主体内容-->
+<body>
+    <h2 style="text-align: center;">员工技能竞赛评分表</h2>
+    <!--临时使用 CSS 样式，重点还是标签-->
+    <table border = "1px"; style="margin: 0px auto;width: 500px;">
+
+        <!--表头-->
+        <thead>
+            <!--行标签-->
+            <tr>
+                <!--居中和加粗效果-->
+                <th>排名</th>
+                <th>姓名</th>
+                <th>分数</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+
+        <!--表体-->
+        <tbody>
+            <!--前三行-->
+            <tr>
+                <td>1</td>
+                <td>张小明</td>
+                <td>100</td>
+                <!--备注内容-->
+                <td rowspan="6">
+                    前三名升职加薪
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>李小黑</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>王小东</td>
+                <td>98</td>
+            </tr>
+            <!--后三行-->
+            <tr>
+                <td>总人数</td>
+                <td colspan="2">200</td>
+            </tr>
+            <tr>
+                <td>平均分</td>
+                <td colspan="2">96</td>
+            </tr>
+            <tr>
+                <td>及格率</td>
+                <td colspan="2">80%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--表单项标签-->
+    <form action="hello.html" method="get">
+        用户名：<input type="text" name="user_name" value="请输入用户名"/> 
+        <br/>
+        密码：<input type="password" name="password"/>
+        <br/>
+        <input type="submit" value="登录" />
+        <input type="reset" value="重置" />
+    </form>
+</body>
+
+
+</html>
