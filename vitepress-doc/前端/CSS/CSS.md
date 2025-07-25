@@ -1,7 +1,7 @@
 ---
 sidebar: false
 aside: left
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 <h1 style="text-align: center; font-weight: bold;">基于 Javaweb 课程的 CSS 笔记</h1>
@@ -209,3 +209,306 @@ outline: [2, 4]
   <input class="shapeClass colorClass fontClass" type="button" value="按钮1" />
 </body>
 ```
+
+## CSS 浮动
+
+### 基本介绍
+
+> <h4>CSS 的 Float（浮动）使元素脱离文档流，按照指定的方向（左或右发生移动），直到它的外边缘碰到包含框或另一个浮动框的边框为止</h4>
+
+- <h4>浮动设计的初衷为了解决文字环绕图片问题，<span style = "color:red;font-weight:bold">浮动后一定不会将文字挡住，这是设计初衷</span></h4>
+- <h4>文档流是是文档中可显示对象在排列时所占用的位置/空间，而脱离文档流就是在页面中不占位置了</h4>
+
+### 浮动属性
+
+| left  | 元素**向左**浮动。                                   |
+| ----- | ---------------------------------------------------- |
+| right | 元素**向右**浮动。                                   |
+| none  | 默认值，元素不浮动，并会显示在其在文本中出现的位置。 |
+
+### 浮动原则
+
+#### （1）当一个元素浮动后，空位会由下方的元素补齐，就像汽水冒泡一样
+
+![alt text](浮动原理-1.png)
+
+#### （2）浮动过程中，块会被覆盖，但是<span style = "color:red;font-weight:bold">文字不会被覆盖</span>，会被挤出去
+
+![alt text](浮动原理-2.png)
+
+### 示例代码
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .outerDiv {
+      width: 500px;
+      height: 300px;
+      border: 1px solid green;
+      background-color: rgb(230, 224, 224);
+    }
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      float: left;
+    }
+    .d1 {
+      background-color: greenyellow;
+      /*  float: right; */
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="outerDiv">
+    <div class="innerDiv d1">框1</div>
+    <div class="innerDiv d2">框2</div>
+    <div class="innerDiv d3">框3</div>
+  </div>
+</body>
+```
+
+<image src="./浮动效果图.png" style="width:600px;margin: 0px auto"/>
+
+## CSS 定位
+
+### 基本介绍
+
+> #### position 属性指定了元素的定位类型
+
+| 值       | 描述                                                                                                                                                                                     |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| static   | 默认值，没有定位，元素按照正常的文档流进行排列（忽略 top、bottom、left、right 以及 z-index 等属性）。                                                                                    |
+| absolute | 生成相对于定位的元素，相对于 static 定位之外的第一个父元素进行定位。元素的位置通过 <span style = "color:red;font-weight:bold">"left"、"top"、"right" 以及 "bottom"</span> 属性进行控制。 |
+| relative | 生成相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。                                                                                                         |
+| fixed    | 生成<span style = "color:red;font-weight:bold">相对于浏览器窗口</span>定位。元素的位置通过 "left"、"top"、"right" 以及 "bottom" 属性进行控制。                                           |
+
+### static
+
+> #### 不设置的时候的默认值就是 static，静态定位，没有定位，元素出现在该出现的位置，<span style = "color:red;font-weight:bold">块级元素垂直排列，行内元素水平排列</span>
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+    }
+    .d1 {
+      background-color: rgb(166, 247, 46);
+      position: static;
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="innerDiv d1">框1</div>
+  <div class="innerDiv d2">框2</div>
+  <div class="innerDiv d3">框3</div>
+</body>
+```
+
+![alt text](静态定位.png)
+
+### absolute
+
+> - #### absolute ,通过 <span style = "color:red;font-weight:bold">top left right bottom</span> 指定元素在页面上的固定位置
+> - #### 定位后元素会让出原来位置,其他元素可以占用
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+    }
+    .d1 {
+      background-color: rgb(166, 247, 46);
+      position: absolute;
+      left: 300px;
+      top: 100px;
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="innerDiv d1">框1</div>
+  <div class="innerDiv d2">框2</div>
+  <div class="innerDiv d3">框3</div>
+</body>
+```
+
+![alt text](绝对定位.png)
+
+### relative
+
+> - #### relative <span style = "color:red;font-weight:bold">相对于自己原来的位置</span>进行地位
+> - #### 定位后<span style = "color:red;font-weight:bold">保留原来的站位</span>,其他元素不会移动到该位置
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+    }
+    .d1 {
+      background-color: rgb(166, 247, 46);
+      position: relative;
+      left: 30px;
+      top: 30px;
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="innerDiv d1">框1</div>
+  <div class="innerDiv d2">框2</div>
+  <div class="innerDiv d3">框3</div>
+</body>
+```
+
+![alt text](相对定位.png)
+
+### fixd
+
+> - #### fixed 始终在<span style = "color:red;font-weight:bold">浏览器窗口固定位置</span>,不会随着页面的上下移动而移动
+> - #### 元素定位后会<span style = "color:red;font-weight:bold">让出原来的位置</span>,其他元素可以占用
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+    }
+    .d1 {
+      background-color: rgb(166, 247, 46);
+      position: fixed;
+      right: 30px;
+      top: 30px;
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="innerDiv d1">框1</div>
+  <div class="innerDiv d2">框2</div>
+  <div class="innerDiv d3">框3</div>
+  br*100+tab
+</body>
+```
+
+<image src="./固态定位.gif" style="width:500px;margin:0px auto"/>
+
+## 盒子模型
+
+### 基本介绍
+
+> - #### CSS 盒模型本质上是一个盒子，封装周围的 HTML 元素，它包括：边距（margin），边框（border），填充（padding），和实际内容（content）
+
+<image src="./盒子模型-1.png" style="width:700px;margin:0px auto"/>
+
+### 属性
+
+> - #### content(内容) - 盒子的内容，显示文本和图像
+> - #### border(边框) - 围绕在内边距和内容外的边框（<span style = "color:red;font-weight:bold">不会侵占内容的空间</span>）
+> - #### padding(内边距) - 清除内容周围的区域，内边距是透明的（<span style = "color:red;font-weight:bold">不会侵占内容的空间</span>）
+>   - #### padding-top：上内边距
+>   - #### padding-right：右内边距
+>   - #### padding-bottom：下内边距
+>   - #### padding-left：左内边距
+> - #### margin(外边距) - 清除边框外的区域，外边距是透明的
+>   - #### margin-top：上外边距
+>   - #### margin-right：右外边距
+>   - #### margin-bottom：下外边距
+>   - #### margin-left：左外边距
+>   - #### 如果不指定方向，默认是<span style = "color:red;font-weight:bold">上右下左（顺时针方向）</span>，即 margin:(margin-top)(margin-right)(margin-bottom)(margin-left)
+>   - #### margin：（上下边距）（左右边距）（<span style = "color:red;font-weight:bold">只填写两个值的情况</span>）
+>   - #### <span style = "color:red;font-weight:bold">居中应用-->margin：0px auto</span>
+
+<br/>
+
+<image src="./盒子模型-2.png" style="width:700px;margin:0px auto"/>
+
+### 示例代码
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    .outerDiv {
+      width: 800px;
+      height: 300px;
+      border: 1px solid green;
+      background-color: rgb(230, 224, 224);
+      margin: 0px auto;
+    }
+    .innerDiv {
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      float: left;
+      /* margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px; */
+      margin: 10px 20px 30px 40px;
+    }
+    .d1 {
+      background-color: greenyellow;
+      /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px; */
+      padding: 10px 20px 30px 40px;
+    }
+    .d2 {
+      background-color: rgb(79, 230, 124);
+    }
+    .d3 {
+      background-color: rgb(26, 165, 208);
+    }
+  </style>
+</head>
+<body>
+  <div class="outerDiv">
+    <div class="innerDiv d1">框1</div>
+    <div class="innerDiv d2">框2</div>
+    <div class="innerDiv d3">框3</div>
+  </div>
+</body>
+```
+
+<image src="./盒子模型-3.png" style="width:800px;margin:0px auto"/>

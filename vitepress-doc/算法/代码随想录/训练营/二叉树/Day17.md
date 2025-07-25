@@ -7,40 +7,32 @@ outline: [2, 3]
 
 ---
 
-## 669. 修剪二叉搜索树
+## 235. 二叉搜索树的最近公共祖先
 
-这道题目比较难，比添加增加和删除节点难的多，建议先看视频理解。
+相对于 二叉树的最近公共祖先 本题就简单一些了，因为 可以利用二叉搜索树的特性。
 
-题目链接：https://leetcode.cn/problems/trim-a-binary-search-tree/
+题目链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
 
-文章讲解：https://programmercarl.com/0669.%E4%BF%AE%E5%89%AA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html
+文章讲解：https://programmercarl.com/0235.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html
 
-视频讲解： https://www.bilibili.com/video/BV17P41177ud
+视频讲解：https://www.bilibili.com/video/BV1Zt4y1F7ww
 
-## 108.将有序数组转换为二叉搜索树
+## 701.二叉搜索树中的插入操作
 
-本题就简单一些，可以尝试先自己做做。
+本题比想象中的简单，大家可以先自己想一想应该怎么做，然后看视频讲解，就发现 本题为什么比较简单了。
 
-题目链接：https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree
+题目链接：https://leetcode.cn/problems/insert-into-a-binary-search-tree/
 
-文章讲解：https://programmercarl.com/0108.%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html
+文章讲解：https://programmercarl.com/0701.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C.html
 
-视频讲解：https://www.bilibili.com/video/BV1uR4y1X7qL
+视频讲解：https://www.bilibili.com/video/BV1Et4y1c78Y
 
-## 538.把二叉搜索树转换为累加树
+## 450.删除二叉搜索树中的节点
 
-本题也不难，在 求二叉搜索树的最小绝对差 和 众数 那两道题目 都讲过了 双指针法，思路是一样的。
+相对于 插入操作，本题就有难度了，涉及到改树的结构
 
-题目链接：https://leetcode.cn/problems/convert-bst-to-greater-tree
+题目链接：https://leetcode.cn/problems/delete-node-in-a-bst/
 
-文章讲解：https://programmercarl.com/0538.%E6%8A%8A%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%B4%AF%E5%8A%A0%E6%A0%91.html
+文章讲解：https://programmercarl.com/0450.%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.html
 
-视频讲解：https://www.bilibili.com/video/BV1d44y1f7wP
-
-## 二叉树总结
-
-好了，二叉树大家就这样刷完了，做一个总结吧
-
-文章链接：https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93%E7%AF%87.html
-
-![alt text](../../思维导图总结/二叉树总结.png)
+视频讲解：https://www.bilibili.com/video/BV1tP41177us

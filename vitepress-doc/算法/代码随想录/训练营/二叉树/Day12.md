@@ -158,11 +158,11 @@ class Solution {
 
 <span style = "color:red;font-weight:bold">前序（根左右）</span>求的就是<span style = "color:red;font-weight:bold">深度</span>
 
-- 二叉树节点的<span style = "color:red;font-weight:bold">深度</span>：指从<span style = "color:red;font-weight:bold">根节点到该节点</span>的最长简单路径边的条数或者节点数（取决于深度从 0 开始还是从 1 开始）
+- 二叉树节点的<span style = "color:red;font-weight:bold">深度</span>：指从<span style = "color:red;font-weight:bold">根节点到该节点</span>的<span style = "color:red;font-weight:bold">最长</span>简单路径边的条数或者节点数（取决于深度从 0 开始还是从 1 开始）
 
 <span style = "color:red;font-weight:bold">后序（左右根）</span>求的是<span style = "color:red;font-weight:bold">高度</span>
 
-- 二叉树节点的<span style = "color:red;font-weight:bold">高度</span>：指从<span style = "color:red;font-weight:bold">该节点到叶子节点</span>的最长简单路径边的条数或者节点数（取决于高度从 0 开始还是从 1 开始）
+- 二叉树节点的<span style = "color:red;font-weight:bold">高度</span>：指从<span style = "color:red;font-weight:bold">该节点到叶子节点</span>的<span style = "color:red;font-weight:bold">最长</span>简单路径边的条数或者节点数（取决于高度从 0 开始还是从 1 开始）
 
 > #### 关键点：<span style = "color:red;font-weight:bold">根节点的高度就是二叉树的最大深度</span>
 

@@ -31,7 +31,7 @@ aside: left
 <br/>
 
 <div style="width: 800px; margin: 0 auto;">
-  <img src="./3.png">
+  <img src="./4.png">
 </div>
 
 <hr/>
@@ -70,8 +70,12 @@ aside: left
 
 ## 7. Debug 快捷键
 
+<div style="width: 800px; margin: 0 auto;">
+  <img src="./9.png">
+</div>
+
 ## 8. 运行快捷键
 
 <div style="width: 800px; margin: 0 auto;">
-  <img src="./9.png">
+  <img src="./10.png">
 </div>
