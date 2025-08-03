@@ -271,17 +271,17 @@ outline: [2, 4]
 
 ### 6. 图片标签
 
-> <span style="color:red;font-weight:bold;font-size:20px">&lt;image src="" title="" alt=""/&gt;</span>
+> <span style="color:red;font-weight:bold;font-size:20px">&lt;img src="" title="" alt=""/&gt;</span>
 
 > <h4>src：用于定义图片的连接</h4>
 > <h4>title：用于定义鼠标悬停时显示的文字</h4>
 > <h4>alt：用于定义图片加载失败时显示的提示文字</h4>
 
 ```html
-<image src="/docs/前端/尚硅谷.png" title="尚硅谷logo" alt="尚硅谷logo" />
+<img src="/docs/前端/尚硅谷.png" title="尚硅谷logo" alt="尚硅谷logo" />
 ```
 
-<image src="/docs/前端/HTML/尚硅谷.png" title="尚硅谷logo" alt="尚硅谷logo"/>
+<img src="/docs/前端/HTML/尚硅谷.png" title="尚硅谷logo" alt="尚硅谷logo"/>
 
 ### 7. 音频标签
 

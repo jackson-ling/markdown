@@ -9,9 +9,12 @@ layout: home
   bell: "🔔",
   warning: "⚠️",
   bulb:"💡",
+  bullseye："🎯"
   Party Popper："🎉"
   title: "📝",
   pen:"🖊️",
+  muscle: "💪",
+  point_right: "👉",
   writing hand:"✍️",
   downwards hand:"👇",
   100: "💯",

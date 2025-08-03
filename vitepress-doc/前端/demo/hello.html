@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <title>小标题</title>
     <style>
-        .shapeClass {
+        /* 通过选择器确定样式的作用范围 */
+        .btn1 {
             display: block;
-            width: 80px;
+            width: 150px;
             height: 40px;
+            background-color: rgb(245, 241, 129);
+            color: rgb(238, 31, 31);
+            border: 3px solid rgb(238, 23, 66);
+            font-size: 22px;
+            font-family: '隶书';
+            line-height: 30px;
             border-radius: 5px;
         }
-
-        .colorClass {
-            background-color: rgb(140, 235, 100);
-            color: white;
-            border: 3px solid green;
-        }
-
-        .fontClass {
-            font-size: 22px;
-            font-family: "隶书";
-            line-height: 30px;
-        }
     </style>
+    <script>
+        function sayhello() {
+            alert("hello , javascript")
+        }
+    </script>
 </head>
 
 <body>
-    <input class="shapeClass colorClass fontClass" type="button" value="按钮1" />
+    <button class="btn1" onclick="sayhello()">点我有惊喜</button>
 </body>
+
 </html>
+</html>
+

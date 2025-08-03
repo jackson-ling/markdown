@@ -79,3 +79,9 @@ aside: left
 <div style="width: 800px; margin: 0 auto;">
   <img src="./10.png">
 </div>
+
+## 8. 删除快捷键
+
+> #### Del 键
+
+#### 效果：保持光标固定的情况下<span style="color:red;font-weight:bold">删除其后面的内容</span>
