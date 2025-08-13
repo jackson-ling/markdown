@@ -207,3 +207,15 @@ Javaweb 课程是跟着**尚硅谷**学习的，下面是课程中 vscode 部分
 <div style="width: 800px; margin: 0 auto;">
   <img src="./vscode安装截图/11.png">
 </div>
+
+## ⭐ 多光标快捷键
+
+### 选中多行同一位置
+
+> #### ctrl + alt + ⬆
+>
+> #### ctrl + alt + ⬇
+
+### 自定义多光标
+
+> #### anl + 鼠标左键

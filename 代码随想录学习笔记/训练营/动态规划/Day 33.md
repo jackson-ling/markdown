@@ -1,0 +1,48 @@
+---
+aside: right
+outline: [2, 3]
+---
+
+<h1 style="text-align: center; font-weight: bold;">Day 33</h1>
+
+---
+
+## 322. 零钱兑换
+
+如果求组合数就是外层 for 循环遍历物品，内层 for 遍历背包。
+
+如果求排列数就是外层 for 遍历背包，内层 for 循环遍历物品。
+
+这句话结合本题 大家要好好理解。
+
+题目链接：https://leetcode.cn/problems/coin-change
+
+文章讲解：https://programmercarl.com/0322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.html
+
+视频讲解：https://www.bilibili.com/video/BV14K411R7yv
+
+## 279.完全平方数
+
+本题 和 322. 零钱兑换 基本是一样的，大家先自己尝试做一做
+
+题目链接：https://leetcode.cn/problems/perfect-squares
+
+文章讲解：https://programmercarl.com/0279.%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0.html
+
+视频讲解：https://www.bilibili.com/video/BV12P411T7Br
+
+## 139.单词拆分
+
+题目链接：https://leetcode.cn/problems/word-break
+
+文章讲解：https://programmercarl.com/0139.%E5%8D%95%E8%AF%8D%E6%8B%86%E5%88%86.html
+
+视频讲解：https://www.bilibili.com/video/BV1pd4y147Rh
+
+## 多重背包理论基础
+
+文章讲解：https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85.html
+
+## 背包问题总结篇
+
+文章讲解：https://programmercarl.com/%E8%83%8C%E5%8C%85%E6%80%BB%E7%BB%93%E7%AF%87.html

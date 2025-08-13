@@ -214,6 +214,94 @@ function sayhello() {
 
 ## 运算符
 
+#### 1. 算数运算符 + - \* / %%
+
+> #### <span style="color:red;font-weight:bold">/</span> 如果 <span style="color:red;font-weight:bold">结果是小数，返回小数</span>，不会取整返回整数
+>
+> #### <span style="color:red;font-weight:bold">/ 在除 0</span> 时,结果是 <span style="color:red;font-weight:bold">Infinity</span> ,而不是报错
+>
+> #### <span style="color:red;font-weight:bold">% 在模 0</span> 时,结果是 <span style="color:red;font-weight:bold">NaN</span>,意思为 <span style="color:red;font-weight:bold">not a number</span> ,而不是报错
+
+#### 2. 复合算数运算符 ++ -- += -= \*= /= %=
+
+> #### 在/=0 时,结果是 <span style="color:red;font-weight:bold">Infinity</span> ,而不是报错
+>
+> #### 在%=0 时,结果是 <span style="color:red;font-weight:bold">NaN</span>,意思为 <span style="color:red;font-weight:bold">not a number</span> ,而不是报错
+
+#### 3. 关系运算符 > < >= <= == === !=
+
+> #### <span style="color:red;font-weight:bold">==</span>：如果两端的数据<span style="color:red;font-weight:bold">类型不一致</span>,会尝试将两端的数据<span style="color:red;font-weight:bold">转换成 number</span>,再对比 number 大小
+>
+> #### （1）'123' 这种字符串可以转换成数字
+>
+> #### （2）<span style="color:red;font-weight:bold">true 会被转换成 1；false 会被转换成 0</span>
+>
+> #### <span style="color:red;font-weight:bold">===</span>：如果两端数据<span style="color:red;font-weight:bold">类型不一致</span>,直接返回 <span style="color:red;font-weight:bold">false</span>,数据类型一致在比较是否相同
+
+#### 4. 逻辑运算符 || &&
+
+> #### 几乎和 JAVA 中的一样,需要注意的是,这里直接就是短路的逻辑运算符,<span style="color:red;font-weight:bold">单个的 | 和 & 以及 ^ 是位运算符</span>
+
+#### 5. 条件运算符 条件? 值 1 : 值 2
+
+> #### 几乎和 JAVA 中的一样
+
+#### 6. 位运算符 | & ^ << >> >>>
+
+> #### 和 java 中的类似(了解)
+
 ## 分支结构
+
+#### 弹窗输入函数
+
+> #### <span style="color:red;font-weight:bold">prompt</span>（"提示信息"），<span style="color:red;font-weight:bold">返回字符串</span>，用 <span style="color:red;font-weight:bold">Number.parseInt( ) </span>方法转为整数
+
+```js
+var input = prompt("输入一个整数");
+var num = Number.parseInt(input);
+if (num === 10) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+```
+
+#### （1）if 结构
+
+> #### if ( ) 中的<span style="color:red;font-weight:bold">非空字符串</span>会被认为是 <span style="color:red;font-weight:bold">true</span>
+>
+> #### if ( ) 中的<span style="color:red;font-weight:bold">非零数字</span>会被认为是 <span style="color:red;font-weight:bold">true</span>
+>
+> #### if ( ) 中的<span style="color:red;font-weight:bold">非空对象</span>会被认为是 <span style="color:red;font-weight:bold">true</span>
+
+```js
+if ("false") {
+  // 非空字符串 if判断为true
+  console.log(true);
+} else {
+  console.log(false);
+}
+if ("") {
+  // 长度为0字符串 if判断为false
+  console.log(true);
+} else {
+  console.log(false);
+}
+if (1) {
+  // 非零数字 if判断为true
+  console.log(true);
+} else {
+  console.log(false);
+}
+if (new Object()) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+```
+
+#### （2）switch 结构
+
+> #### 和 Java 相同
 
 ## 循环结构

@@ -50,6 +50,11 @@ outline: [2, 3]
 
 #### ❌ 只输入，不输出，永远都学不会 ❗❗❗
 
+::: tip <span style="font-size: 20px;">提醒 👇</span>
+
+<h2 style="text-align:center;font-size:30px"><span style ="color:red">拒绝被动学习</span>，主动学习，主动<span style="color:red">思考</span>，内化理解，不要被牵着走</h2>
+:::
+
 #### 实践有如下要求
 
 > #### （1）<span style="font-size:25px;color:red;font-weight:bold">基础 </span> 永远是 <span style="font-size:25px;color:red;font-weight:bold"> 核心</span>，打下扎实的基础是学习新知识的前提
@@ -142,5 +147,5 @@ outline: [2, 3]
 
 ::: tip <span style="font-size: 20px;">总结 👇</span>
 
-<h2 style="text-align:center">🚀🚀调整心态（明确目标，坚持下去）重视基础（大量练习，多写多练），知识内化，建立体系，及时复习🚀🚀</h2>
+<h4 style="text-align:center">🚀🚀调整心态（明确目标，坚持下去）重视基础（大量练习，多写多练），知识内化，建立体系（总结提炼），及时复习（堆熟练度）🚀🚀</h4>
 :::
